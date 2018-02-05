@@ -1,0 +1,9 @@
+<h1>Attributes</h1>
+
+<ul>
+<% @stats.each do |stat| %>
+  <li>
+    <strong><%= stat.name %></strong> <%= stat.score %>
+  </li>
+<% end %>
+</ul>
