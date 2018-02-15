@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  strmin: 1
+  strmax: 1
+  dexmin: 1
+  dexmax: 1
+  conmin: 1
+  conmax: 1
+  intmin: 1
+  intmax: 1
+  wismin: 1
+  wismax: 1
+  chamin: 1
+  chamax: 1
+  adj1: 1
+  adj2: 1
+
+two:
+  name: MyString
+  strmin: 1
+  strmax: 1
+  dexmin: 1
+  dexmax: 1
+  conmin: 1
+  conmax: 1
+  intmin: 1
+  intmax: 1
+  wismin: 1
+  wismax: 1
+  chamin: 1
+  chamax: 1
+  adj1: 1
+  adj2: 1

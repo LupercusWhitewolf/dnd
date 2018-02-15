@@ -3,7 +3,10 @@
 <ul>
 <% @stats.each do |stat| %>
   <li>
-    <strong><%= stat.name %></strong> <%= stat.score %>
+    <strong><%= stat.name %></strong> <%= stat.score %> <% if stat.name == "STR" %> - <%= StatService.hitprob(1) %> <% end %>
   </li>
 <% end %>
+</ul>
+<ul>
+<%= render 'skills' %>
 </ul>
