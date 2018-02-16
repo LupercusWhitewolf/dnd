@@ -8,62 +8,62 @@
 Stat.create!([
   {
     name: 'STR',
-    score: 10
+    score: 15
   },
   {
     name: 'DEX',
-    score: 10
+    score: 16
   },
   {
     name: 'CON',
-    score: 10
+    score: 18
   },
   {
     name: 'INT',
-    score: 10
+    score: 14
   },
   {
     name: 'WIS',
-    score: 10
+    score: 13
   },
   {
     name: 'CHA',
-    score: 10
+    score: 12
   },
 ])
 Race.create!([
   {
-    name: "Human"
-    strmin: 0
-    strmax: 25
-    dexmin: 0
-    dexmax: 25
-    conmin: 0
-    conmax: 25
-    intmin: 0
-    intmax: 25
-    wismin: 0
-    wismax: 25
-    chamin: 0
-    chamax: 25
-    adj1: 0
+    name: "Human",
+    strmin: 0,
+    strmax: 25,
+    dexmin: 0,
+    dexmax: 25,
+    conmin: 0,
+    conmax: 25,
+    intmin: 0,
+    intmax: 25,
+    wismin: 0,
+    wismax: 25,
+    chamin: 0,
+    chamax: 25,
+    adj1: 0,
     adj2: 0
   },
   {
-    name: "Elf"
-    strmin: 3
-    strmax: 18
-    dexmin: 6
-    dexmax: 18
-    conmin: 7
-    conmax: 18
-    intmin: 8
-    intmax: 18
-    wismin: 3
-    wismax: 18
-    chamin: 8
-    chamax: 18
-    adj1: 1
+    name: "Elf",
+    strmin: 3,
+    strmax: 18,
+    dexmin: 6,
+    dexmax: 18,
+    conmin: 7,
+    conmax: 18,
+    intmin: 8,
+    intmax: 18,
+    wismin: 3,
+    wismax: 18,
+    chamin: 8,
+    chamax: 18,
+    adj1: 1,
     adj2: -1
   }
   ])

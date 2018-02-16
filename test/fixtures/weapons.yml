@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  cost: 1
+  weight: 1
+  size: MyString
+  type: 
+  speed: 1
+  damagesm: MyString
+  damagel: MyString
+  rof: 1
+  ranges: 1
+  rangem: 1
+  rangel: 1
+
+two:
+  name: MyString
+  cost: 1
+  weight: 1
+  size: MyString
+  type: 
+  speed: 1
+  damagesm: MyString
+  damagel: MyString
+  rof: 1
+  ranges: 1
+  rangem: 1
+  rangel: 1
