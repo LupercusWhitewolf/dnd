@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th>Name:</th> <td><%= Character.find(1).cname %></td>
+    <th>Player:</th> <td><%= Character.find(1).pname %></td>
+    <th>Class:</th> <td><%= Character.find(1).prof %></td>
+    <th>Race</th> <td><%= Character.find(1).race %></td>
+    <th>Level:</th> <td><%= Character.find(1).level %></td>
+    <th>Experience:</th> <td><%= Character.find(1).exp %> / <%= ExpService.exptolvl(1) %></td>
+    <th>Alignment:</th> <td><%= Character.find(1).alignment %></td>
+    <th>Religion:</th> <td><%= Character.find(1).religion %></td>
+    <th>Place of Origin:</th> <td><%= Character.find(1).pofo %></td>
+    <th>Gender:</th> <td><%= Character.find(1).gender %></td>
+    <th>Hair:</th> <td><%= Character.find(1).hair %></td>
+    <th>Eyes:</th> <td><%= Character.find(1).eyes %></td>
+    <th>Height:</th> <td><%= Character.find(1).height %></td>
+    <th>Weight:</th> <td><%= Character.find(1).weight %></td>
+  </tr>
+</table>

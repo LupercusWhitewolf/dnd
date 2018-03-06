@@ -7,28 +7,22 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Stat.create!([
   {
-    name: 'STR',
-    score: 15
+    str: 15
   },
   {
-    name: 'DEX',
-    score: 16
+    dex: 16
   },
   {
-    name: 'CON',
-    score: 18
+    con: 18
   },
   {
-    name: 'INT',
-    score: 14
+    int: 14
   },
   {
-    name: 'WIS',
-    score: 13
+    wis: 13
   },
   {
-    name: 'CHA',
-    score: 12
+    cha: 12
   },
 ])
 Race.create!([

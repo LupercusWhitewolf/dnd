@@ -1,0 +1,57 @@
+<h1>Update Your Character</h1>
+
+<%= form_for(@character) do |f| %>
+  <p>
+    <%= f.label "Strength" %>:<%= f.select :str, (1..18) %>
+  </p>
+  <p>
+    <%= f.label "Dexterity" %>:<%= f.select :dex, (1..18) %>
+  </p>
+  <p>
+    <%= f.label "Constitution" %>:<%= f.select :con, (1..18) %>
+  </p>
+  <p>
+    <%= f.label "Intelligence" %>:<%= f.select :int, (1..18) %>
+  </p>
+  <p>
+    <%= f.label "Wisdom" %>:<%= f.select :wis, (1..18) %>
+  </p>
+  <p>
+    <%= f.label "Charisma" %>:<%= f.select :cha, (1..18) %>
+  </p>
+  <p>
+    <%= f.label "Character_Name" %><br/>
+    <%= f.text_field :cname %>
+  </p>
+  <p>
+    <%= f.label "Player_Name" %><br/>
+    <%= f.text_field :pname %>
+  </p>
+  <p>
+    <%= f.label "Class" %><br/>
+    <%= f.select :prof, Character::PROF, prompt: "Pick one" %>
+  </p>
+  <p>
+    <%= f.label "Race" %><br/>
+    <%= f.select :race, Character::RACE, prompt: "Pick one" %>
+  </p>
+  <p>
+    <%= f.label "Alignment" %><br/>
+    <%= f.select :alignment, Character::ALIGNMENT, prompt: "Pick one" %>
+  </p>
+  <p>
+    <%= f.label "Religion" %><br>
+    <%= f.text_field :religion %>
+  </p>
+  <p>
+    <%= f.label "Place of Origin" %><br/>
+    <%= f.text_field :pofo %>
+  </p>
+  <p>
+    <%= f.label "Gender" %><br/>
+    <%= f.select :gender, Character::GENDER, prompt: "Pick one" %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

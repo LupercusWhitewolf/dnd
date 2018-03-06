@@ -1,12 +1,8 @@
-<h1>Attributes</h1>
-
-<ul>
-<% @stats.each do |stat| %>
-  <li>
-    <strong><%= stat.name %></strong> <%= stat.score %> <% if stat.name == "STR" %> - <%= StatService.hitprob(1) %> <% end %>
-  </li>
-<% end %>
-</ul>
-<ul>
-<%= render 'skills' %>
-</ul>
+<h1>Characters</h1>
+  <ul id="character">
+    <% @character.each do |character| %>
+      <li>
+        <strong><%= link_to character.cname, character %></strong>
+      </li>
+    <% end %>
+  </ul>

@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pname: MyString
+  cname: MyString
+  class: MyString
+  race: MyString
+  level: 1
+  exp: 1
+  exptolvl: 1
+  alignment: MyString
+  religion: MyString
+  pofo: MyString
+  gender: MyString
+  hair: MyString
+  eyes: MyString
+  height: 1
+  weight: 1
+
+two:
+  pname: MyString
+  cname: MyString
+  class: MyString
+  race: MyString
+  level: 1
+  exp: 1
+  exptolvl: 1
+  alignment: MyString
+  religion: MyString
+  pofo: MyString
+  gender: MyString
+  hair: MyString
+  eyes: MyString
+  height: 1
+  weight: 1

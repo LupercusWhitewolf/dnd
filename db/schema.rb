@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180216015512) do
+ActiveRecord::Schema.define(version: 20180305235503) do
 
   create_table "armors", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,32 @@ ActiveRecord::Schema.define(version: 20180216015512) do
     t.integer "ac"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "characters", force: :cascade do |t|
+    t.string "pname"
+    t.string "cname"
+    t.string "prof"
+    t.string "race"
+    t.integer "level"
+    t.integer "exp"
+    t.integer "exptolvl"
+    t.string "alignment"
+    t.string "religion"
+    t.string "pofo"
+    t.string "gender"
+    t.string "hair"
+    t.string "eyes"
+    t.integer "height"
+    t.integer "weight"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "str"
+    t.integer "dex"
+    t.integer "con"
+    t.integer "int"
+    t.integer "wis"
+    t.integer "cha"
   end
 
   create_table "equipment", force: :cascade do |t|
@@ -48,13 +74,22 @@ ActiveRecord::Schema.define(version: 20180216015512) do
     t.integer "adj2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "adj3"
+    t.integer "adj4"
+    t.integer "adj5"
+    t.integer "adj6"
   end
 
   create_table "stats", force: :cascade do |t|
-    t.string "name"
-    t.integer "score"
+    t.integer "str"
+    t.integer "dex"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "con"
+    t.integer "int"
+    t.integer "wis"
+    t.integer "cha"
+    t.integer "character_id"
   end
 
   create_table "weapons", force: :cascade do |t|

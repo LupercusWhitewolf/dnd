@@ -1,10 +1,25 @@
 class StatService
-  def self.value(stat_id)
-    Stat.find(stat_id).score
+  def self.str(id)
+    Character.find(id).str
+  end
+  def self.dex(id)
+    Character.find(id).dex
+  end
+  def self.con(id)
+    Character.find(id).con
+  end
+  def self.int(id)
+    Character.find(id).int
+  end
+  def self.wis(id)
+    Character.find(id).wis
+  end
+  def self.cha(id)
+    Character.find(id).cha
   end
   #Strength Abilities
-  def self.hitprob(stat_id)
-    str = self.value(stat_id)
+  def self.hitprob(id)
+    str = self.str(id)
     if str == 3
       output = -3
     elsif str <= 5
@@ -17,8 +32,8 @@ class StatService
       output = 1
     end
   end
-  def self.dmgadj(stat_id)
-    str = self.value(stat_id)
+  def self.dmgadj(id)
+    str = self.str(id)
     if str <=5
       output = -1
     elsif str <= 15
@@ -29,8 +44,8 @@ class StatService
       output = 2
     end
   end
-  def self.wgtalw(stat_id)
-    str = self.value(stat_id)
+  def self.wgtalw(id)
+    str = self.str(id)
     if str == 3
       output = -350
     elsif str <= 5
@@ -51,8 +66,8 @@ class StatService
       output = 750
     end
   end
-  def self.opendr(stat_id)
-    str = self.value(stat_id)
+  def self.opendr(id)
+    str = self.str(id)
     if str <= 7
       output = 1
     elsif str <= 15
@@ -61,8 +76,8 @@ class StatService
       output = "1-3"
     end
   end
-  def self.bblg(stat_id)
-    str = self.value(stat_id)
+  def self.bblg(id)
+    str = self.str(id)
     if str <= 7
       output = 0
     elsif str <= 9
@@ -82,8 +97,8 @@ class StatService
     end
   end
   #Dexterity Abilities
-  def self.react(stat_id)
-    dex = self.value(stat_id)
+  def self.react(id)
+    dex = self.dex(id)
     if dex == 3
       output = -3
     elsif dex == 4
@@ -102,8 +117,8 @@ class StatService
 
 
   end
-  def self.defadj(stat_id)
-    dex = self.value(stat_id)
+  def self.defadj(id)
+    dex = self.dex(id)
     if dex == 3
       output = 4
     elsif dex == 4
@@ -124,8 +139,8 @@ class StatService
       output = -4
     end
   end
-  def self.pick(stat_id)
-    dex = self.value(stat_id)
+  def self.pick(id)
+    dex = self.dex(id)
     if dex <= 8
       output = " "
     elsif dex == 9
@@ -142,8 +157,8 @@ class StatService
       output = 10
     end
   end
-  def self.lock(stat_id)
-    dex = self.value(stat_id)
+  def self.lock(id)
+    dex = self.dex(id)
     if dex <= 8
       output = " "
     elsif dex == 9
@@ -160,8 +175,8 @@ class StatService
       output = 15
     end
   end
-  def self.trap(stat_id)
-    dex = self.value(stat_id)
+  def self.trap(id)
+    dex = self.dex(id)
     if dex <= 8
       output = " "
     elsif dex <= 10
@@ -174,8 +189,8 @@ class StatService
       output = 5
     end
   end
-  def self.stlth(stat_id)
-    dex = self.value(stat_id)
+  def self.stlth(id)
+    dex = self.dex(id)
     if dex <= 8
       output = " "
     elsif dex == 9
@@ -194,8 +209,8 @@ class StatService
       output = 10
     end
   end
-  def self.sdw(stat_id)
-    dex = self.value(stat_id)
+  def self.sdw(id)
+    dex = self.dex(id)
     if dex <= 8
       output = " "
     elsif dex == 9
@@ -211,8 +226,8 @@ class StatService
     end
   end
   #Constitution Abilities
-  def self.hpa(stat_id)
-    con = self.value(stat_id)
+  def self.hpa(id)
+    con = self.con(id)
     if con == 1
       output = -3
     elsif con <= 3
@@ -221,7 +236,7 @@ class StatService
       output = -1
     elsif con <= 14
       output = 0
-    elsif con = 15
+    elsif con == 15
       output = 1
     elsif con <= 18
       output = 2
@@ -231,8 +246,8 @@ class StatService
       #output = 4
     end
   end
-  def self.ss(stat_id)
-    con = self.value(stat_id)
+  def self.ss(id)
+    con = self.con(id)
     if con <= 13
       output = 5*(con)+20
     elsif con == 14
@@ -247,8 +262,8 @@ class StatService
       output = 99
     end
   end
-  def self.rs(stat_id)
-    con = self.value(stat_id)
+  def self.rs(id)
+    con = self.con(id)
     if con <= 13
       output = 5*(con)+25
     elsif con == 14
@@ -263,8 +278,8 @@ class StatService
       output = 100
     end
   end
-  def self.ps(stat_id)
-    con = self.value(stat_id)
+  def self.ps(id)
+    con = self.con(id)
     if con == 1
       output = -2
     elsif con == 2
@@ -273,8 +288,8 @@ class StatService
       output = 0
     end
   end
-  #def self.regen(stat_id)
-    #con = self.value(stat_id)
+  #def self.regen(id)
+    #con = self.con(id)
     #if  con <= 19
       #output = 0
     #elsif con = 20
@@ -293,8 +308,8 @@ class StatService
   #end
 
   #Intelligence Abilities
-  def self.lang(stat_id)
-    int = self.value(stat_id)
+  def self.lang(id)
+    int = self.int(id)
     if int == 1
       output = 0
     elsif int <= 8
@@ -309,8 +324,8 @@ class StatService
       output = con - 11
     end
   end
-  def self.splvl(stat_id)
-    int = self.value(stat_id)
+  def self.splvl(id)
+    int = self.int(id)
     if int <= 8
       output = "N/A"
     elsif int == 9
@@ -327,16 +342,16 @@ class StatService
       output = 9
     end
   end
-  def self.lrnspl(stat_id)
-    int = self.value(stat_id)
+  def self.lrnspl(id)
+    int = self.int(id)
     if int <= 17
       output = 5*(int)-10
     else int == 18
       output = 85
     end
   end
-  def self.mxspl(stat_id)
-    int = self.value(stat_id)
+  def self.mxspl(id)
+    int = self.int(id)
     if int <= 8
       output = "N/A"
     elsif int == 9
@@ -353,8 +368,8 @@ class StatService
       output = 18
     end
   end
-  def self.splim(stat_id)
-    int = self.value(stat_id)
+  def self.splim(id)
+    int = self.int(id)
     if int <= 18
       output = "N/A"
     else int <= 25
@@ -362,8 +377,8 @@ class StatService
     end
   end
   #Wisdom Abilities
-  def self.mda(stat_id)
-    wis = self.value(stat_id)
+  def self.mda(id)
+    wis = self.wis(id)
     if wis == 1
       output = -6
     elsif wis == 2
@@ -376,16 +391,16 @@ class StatService
       output = wis - 14
     end
   end
-  def self.bonus(stat_id)
-    wis = self.value(stat_id)
+  def self.bonus(id)
+    wis = self.wis(id)
     if wis <= 12
       output = 0
     else wis <= 18
       output = "N/A"
     end
   end
-  def self.sfail(stat_id)
-    wis = self.value(stat_id)
+  def self.sfail(id)
+    wis = self.wis(id)
     if wis == 1
       output = 80
     elsif wis == 2
@@ -396,8 +411,8 @@ class StatService
       output = 0
     end
   end
-  def self.wisim(stat_id)
-    wis = self.value(stat_id)
+  def self.wisim(id)
+    wis = self.wis(id)
     if wis <= 18
       output = "N/A"
     else wis == 19
@@ -405,8 +420,8 @@ class StatService
     end
   end
   #Charisma Abilities
-  def self.hench(stat_id)
-    cha = self.value(stat_id)
+  def self.hench(id)
+    cha = self.cha(id)
     if cha == 1
       output = 0
     elsif cha <= 4
@@ -431,8 +446,8 @@ class StatService
       output = 15
     end
   end
-  def self.ltybse(stat_id)
-    cha = self.value(stat_id)
+  def self.ltybse(id)
+    cha = self.cha(id)
     if cha <= 8
       output = (cha) - 9
     elsif cha <= 13
@@ -447,8 +462,8 @@ class StatService
       output = 8
     end
   end
-  def self.rctadj(stat_id)
-    cha = self.value(stat_id)
+  def self.rctadj(id)
+    cha = self.cha(id)
     if cha <= 7
       output = (cha) - 8
     elsif cha <= 12

@@ -35,3 +35,21 @@ class RaceService
   def self.chamax
     Race.find(race_id).chamax
   end
+  def self.adj1
+    Race.fine(race_id).adj1
+  end
+  def self.adj2
+    Race.fine(race_id).adj2
+  end
+  def self.adj3
+    Race.fine(race_id).adj3
+  end
+  def self.adj4
+    Race.fine(race_id).adj4
+  end
+  def self.adj5
+    Race.fine(race_id).adj5
+  end
+  def self.adj6
+    Race.fine(race_id).adj6
+  end

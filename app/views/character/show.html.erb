@@ -1,0 +1,19 @@
+<article id="character_sheet" class="character">
+
+<h1>Character Info</h2>
+<%= render 'character_info' %>
+
+<h2>Attributes</h2>
+<ul>
+  <li>
+    <strong>STR:</strong> <%= @character.str %>
+    <strong>DEX:</strong> <%= @character.dex %>
+    <strong>CON:</strong> <%= @character.con %>
+    <strong>INT:</strong> <%= @character.int %>
+    <strong>WIS:</strong> <%= @character.wis %>
+    <strong>CHA:</strong> <%= @character.con %>
+  </li>
+</ul>
+<ul>
+  <%= render 'skills' %>
+</ul>
