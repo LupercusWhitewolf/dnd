@@ -4,9 +4,10 @@
     <th>Player:</th> <td><%= Character.find(@character.id).pname %></td>
     <th>Class:</th> <td><%= Character.find(@character.id).prof %></td>
     <th>Race</th> <td><%= Character.find(@character.id).race %></td>
-    <th>Level:</th> <td><%= Character.find(@character.id).level %></td>
-    <th>Experience:</th> <td><%= Character.find(@character.id).exp %> / <%= ExpService.exptolvl(@character.id) %></td>
+    <th>Level:</th> <td><%= ExpService.lvl(@character.id) %></td>
+    <th>Experience:</th> <td><%= Character.find(@character.id).exp %>/<%= ExpService.exptolvl(@character.id) %></td>
   </tr>
+  <tr>
     <th>Alignment:</th> <td><%= Character.find(@character.id).alignment %></td>
     <th>Religion:</th> <td><%= Character.find(@character.id).religion %></td>
     <th>Place of Origin:</th> <td><%= Character.find(@character.id).pofo %></td>
@@ -20,6 +21,6 @@
 </table>
 <table>
   <tr>
-    <th>Hit Points:</th> <td><%= %></td>
+    <th>Hit Points:</th> <td><%= Character.find(@character.id).hitpoints %></td>
   </tr>
 </table>
