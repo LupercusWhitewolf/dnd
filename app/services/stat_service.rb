@@ -111,11 +111,9 @@ class StatService
       output = 1
     elsif dex == 17
       output = 2
-    else dex == 18
+    elsif dex == 18
       output = 3
     end
-
-
   end
   def self.defadj(id)
     dex = self.dex(id)
@@ -227,6 +225,7 @@ class StatService
   end
   #Constitution Abilities
   def self.hpa(id)
+    prof = ProfService.prof(id)
     con = self.con(id)
     if con == 1
       output = -3
@@ -238,12 +237,12 @@ class StatService
       output = 0
     elsif con == 15
       output = 1
+    elsif con == 17 && prof == "Fighter"
+      output = 3
+    elsif con == 18 && prof == "Fighter"
+      output = 4
     elsif con <= 18
       output = 2
-    #elsif con == 17 && !prof.name?("Fighter")
-      #output = 3
-    #else con == 18 && !prof.name?("Fighter")
-      #output = 4
     end
   end
   def self.ss(id)

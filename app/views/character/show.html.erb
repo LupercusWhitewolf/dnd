@@ -6,12 +6,12 @@
 <h2>Attributes</h2>
 <ul>
   <li>
-    <strong>STR:</strong> <%= @character.str %>
-    <strong>DEX:</strong> <%= @character.dex %>
-    <strong>CON:</strong> <%= @character.con %>
-    <strong>INT:</strong> <%= @character.int %>
-    <strong>WIS:</strong> <%= @character.wis %>
-    <strong>CHA:</strong> <%= @character.con %>
+    <strong>STR:</strong> <%= @character.str + RaceService.adj1(@character.race) %>
+    <strong>DEX:</strong> <%= @character.dex + RaceService.adj2(@character.race) %>
+    <strong>CON:</strong> <%= @character.con + RaceService.adj3(@character.race)%>
+    <strong>INT:</strong> <%= @character.int + RaceService.adj4(@character.race)%>
+    <strong>WIS:</strong> <%= @character.wis + RaceService.adj5(@character.race)%>
+    <strong>CHA:</strong> <%= @character.con + RaceService.adj6(@character.race)%>
   </li>
 </ul>
 <ul>

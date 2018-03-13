@@ -52,6 +52,10 @@
     <%= f.select :gender, Character::GENDER, prompt: "Pick one" %>
   </p>
   <p>
+    <%= f.label "Experience" %><br/>
+    <%= f.number_field :exp %>
+  </p>
+  <p>
     <%= f.submit %>
   </p>
 <% end %>

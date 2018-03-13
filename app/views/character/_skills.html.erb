@@ -1,40 +1,40 @@
 <table>
   <tr>
-    <th>Hit Probability:</th> <td><%= StatService.hitprob(1) %></td>
-    <th>Damage Adjustment:</th> <td><%= StatService.dmgadj %></td>
-    <th>Weight Allowance:</th> <td><%= StatService.wgtalw %></td>
-    <th>Open Doors:</th> <td><%= StatService.opendr %></td>
-    <th>Bend Bars/Lift Gates:</th> <td><%= StatService.bblg %></td>
+    <th>Hit Probability:</th> <td><%= StatService.hitprob(@character.id) %></td>
+    <th>Damage Adjustment:</th> <td><%= StatService.dmgadj(@character.id) %></td>
+    <th>Weight Allowance:</th> <td><%= StatService.wgtalw(@character.id) %></td>
+    <th>Open Doors:</th> <td><%= StatService.opendr(@character.id) %></td>
+    <th>Bend Bars/Lift Gates:</th> <td><%= StatService.bblg(@character.id) %></td>
   </tr>
   <tr>
-    <th>Reaction/Attaction:</th> <td><%= StatService.react(1) %></td>
-    <th>Defensive Adjustment:</th> <td><%= StatService.defadj(1) %></td>
-    <th>Picking Pockets:</th> <td><%= StatService.pick(1) %>%</td>
-    <th>Opening Locks:</th> <td><%= StatService.lock(1) %>%</td>
-    <th>Locating/Removing Traps:</th> <td><%= StatService.stlth(1) %>%</td>
-    <th>Moving Silently:</th> <td><%= StatService.sdw(1) %>%</td>
+    <th>Reaction/Attaction:</th> <td><%= StatService.react(@character.id) %></td>
+    <th>Defensive Adjustment:</th> <td><%= StatService.defadj(@character.id) %></td>
+    <th>Picking Pockets:</th> <td><%= StatService.pick(@character.id) %>%</td>
+    <th>Opening Locks:</th> <td><%= StatService.lock(@character.id) %>%</td>
+    <th>Locating/Removing Traps:</th> <td><%= StatService.stlth(@character.id) %>%</td>
+    <th>Moving Silently:</th> <td><%= StatService.sdw(@character.id) %>%</td>
   </tr>
   <tr>
-    <th>Hit Point Adjustment:</th> <td><%= StatService.hpa(1) %></td>
-    <th>System Shock:</th> <td><%= StatService.ss(1) %></td>
-    <th>Resurrection Survival:</th> <td><%= StatService.rs(1) %></td>
-    <th>Poison Save:</th> <td><%= StatService.ps(1) %></td>
+    <th>Hit Point Adjustment:</th> <td><%= StatService.hpa(@character.id) %></td>
+    <th>System Shock:</th> <td><%= StatService.ss(@character.id) %></td>
+    <th>Resurrection Survival:</th> <td><%= StatService.rs(@character.id) %></td>
+    <th>Poison Save:</th> <td><%= StatService.ps(@character.id) %></td>
   </tr>
   <tr>
-    <th>Number of Additional Languages: </th> <td><%= StatService.lang(1) %></td>
-    <th>Spell Level:</th> <td><%= StatService.splvl(1) %>th</td>
-    <th>Chance to Learn Spell:</th> <td><%= StatService.lrnspl(1) %>%</td>
-    <th>Max Spells per Level:</th> <td><%= StatService.mxspl(1) %></td>
-    <th>Spell Immunity:</th> <td><%= StatService.splim(1) %></td>
+    <th>Number of Additional Languages: </th> <td><%= StatService.lang(@character.id) %></td>
+    <th>Spell Level:</th> <td><%= StatService.splvl(@character.id) %>th</td>
+    <th>Chance to Learn Spell:</th> <td><%= StatService.lrnspl(@character.id) %>%</td>
+    <th>Max Spells per Level:</th> <td><%= StatService.mxspl(@character.id) %></td>
+    <th>Spell Immunity:</th> <td><%= StatService.splim(@character.id) %></td>
   </tr>
   <tr>
-    <th>Magical Defense Adjustment:</th> <td><%= StatService.mda(1) %></td>
-    <th>Bonus Spells:</th> <td><%= StatService.bonus(1) %></td>
-    <th>Chance of Spell Failure:</th> <td><%= StatService.sfail(1) %>%</td>
-    <th>Spell Immunity:</th> <td><%= StatService.wisim(1) %></td>
+    <th>Magical Defense Adjustment:</th> <td><%= StatService.mda(@character.id) %></td>
+    <th>Bonus Spells:</th> <td><%= StatService.bonus(@character.id) %></td>
+    <th>Chance of Spell Failure:</th> <td><%= StatService.sfail(@character.id) %>%</td>
+    <th>Spell Immunity:</th> <td><%= StatService.wisim(@character.id) %></td>
   </tr>
   <tr>
-    <th>Max Number of Henchmen:</th> <td><%= StatService.hench(1) %></td>
-    <th>Loyalty Base:</th> <td><%= StatService.ltybse(1) %></td>
-    <th>Reaction Adjustment:</th><td><%= StatService.rctadj(1) %></td>
+    <th>Max Number of Henchmen:</th> <td><%= StatService.hench(@character.id) %></td>
+    <th>Loyalty Base:</th> <td><%= StatService.ltybse(@character.id) %></td>
+    <th>Reaction Adjustment:</th><td><%= StatService.rctadj(@character.id) %></td>
   </tr>
